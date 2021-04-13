@@ -25,7 +25,7 @@ RSpec.describe ATM do
     end
     it "不可以存 0 元或是小於 0 元的金額" do
       atm = ATM.new(10)
-      atm.deposit(-5)
+      atm.deposit(-1)
       expect(atm.balance).to be 10
     end
   end
